@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Link Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      text-align: center;
+      transition: background 0.3s, color 0.3s;
+    }
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 26px;
+      margin: 10px 0 30px;
+    }
+    .links a {
+      display: block;
+      margin: 12px 0;
+      padding: 14px;
+      border-radius: 8px;
+      background: #f2f2f2;
+      color: #000;
+      text-decoration: none;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+    }
+    .links a:hover {
+      background: #e6e6e6;
+      transform: translateY(-2px);
+    }
+    /* Dark mode styles */
+    body.dark {
+      background: #111;
+      color: #fff;
+    }
+    body.dark .links a {
+      background: #222;
+      color: #fff;
+      border: 1px solid #333;
+    }
+    body.dark .links a:hover {
+      background: #333;
+    }
+    /* Toggle button */
+    .toggle-btn {
+      margin-top: 20px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #ddd;
+      transition: background 0.3s;
+    }
+    .toggle-btn:hover {
+      background: #ccc;
+    }
+    body.dark .toggle-btn {
+      background: #444;
+      color: #fff;
+    }
+    body.dark .toggle-btn:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="your-pfp.jpg" alt="Profile Picture" class="avatar">
+    <h1>Your Name</h1>
+    <div class="links">
+      <a href="https://instagram.com/" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/" target="_blank">TikTok</a>
+      <a href="https://discord.gg/" target="_blank">Discord</a>
+      <a href="https://youtube.com/" target="_blank">YouTube</a>
+    </div>
+    <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
